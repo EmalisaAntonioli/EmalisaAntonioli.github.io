@@ -11047,7 +11047,7 @@ footer.footer .social-link:hover {
     height: 75%;
   }
   .masthead {
-    background-position: left center;
+    background-position: left center !important;
   }
 }
 .masthead {
