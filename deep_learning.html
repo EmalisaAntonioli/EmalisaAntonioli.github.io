@@ -38,17 +38,34 @@
                     <h2 class="text-primary mb-5">Computer Vision Challenge</h2>
                     <h3 class="text-secondary mb-0">Project Goal</h3>
                     <p class="lead mb-5 text-start">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas ab sed, magni quam culpa doloremque corporis voluptatum exercitationem! Corrupti quam expedita necessitatibus unde soluta vel numquam ducimus impedit temporibus! Assumenda!
+                        For this project, we were tasked with creating a deep learning model to autonomously drive a car in Forza Horizon 4. 
+                        The project went from collecting image and controller data, through training a model, to controlling the car in real time. 
+                        We also developed an object detection module using YOLO to recognize in-game obstacles like other cars and buses.
                     </p>
-                    <h3 class="text-secondary mb-0">Project Realisation</h3>
+                    <h3 class="text-secondary mb-0">Project Realization</h3>
                     <p class="lead mb-5 text-start">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas ab sed, magni quam culpa doloremque corporis voluptatum exercitationem! Corrupti quam expedita necessitatibus unde soluta vel numquam ducimus impedit temporibus! Assumenda!
+                        We started by designing a custom data collection system that captured screenshots and logged controller inputs every 0.5 seconds, embedding the values into the filenames to simplify labeling. 
+                        After applying data augmentations, we noticed an imbalance in steering angle distribution. This made it difficult for the model to take turns. 
+                        We visualized this imbalance, which helped identify that turns weren’t well represented. We resolved this by duplicating images with high steering angles to improve model generalization.
+
+                        The model training began with a classification approach but later transitioned to a regression model based on ResNet50, better suited for predicting continuous joystick values. 
+                        The trained model was integrated into a virtual controller setup that allowed real-time control in the game. As an extra, we built a YOLOv11 object detection model, although this wasn’t integrated into live driving due to hardware limits.
+                        Below you can find a video, where the model autonomously plays the game for 30 seconds.
                     </p>
+                    <img class="mb-5 img-fluid" src="assets/img/cvc.gif" alt="..." />
+
                     <h3 class="text-secondary mb-0">My Contribution</h3>
-                    <p class="lead mb-5 text-start">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas ab sed, magni quam culpa doloremque corporis voluptatum exercitationem! Corrupti quam expedita necessitatibus unde soluta vel numquam ducimus impedit temporibus! Assumenda!
+                    <p class="lead mb-3 text-start">
+                        This was a group project with two other students (Jeffrey Stynen and Emma Schoofs). I was primarily responsible for writing the data collection code, which automatically gathered game screenshots and controller inputs, and embedding them into structured filenames for easy access during training. 
+                        I also contributed to developing the data augmentation strategy and actively participated in the training process. 
+                        A key moment for me was when I visualized the steering angle distribution and uncovered a critical dataset imbalance, which directly influenced our approach to data augmentation and improved the model’s ability to handle turns. 
+                        Through this, I gained valuable experience in building practical data pipelines, managing datasets for computer vision, and understanding how thoughtful data preparation and balancing can have a bigger impact on a model’s performance than tweaking the network itself.
                     </p>
-                    <a class="btn btn-secondary btn-xl mb-5" href="internship.html">See More</a>
+                    <p class="lead mb-3 text-start">
+                        Via the button below you can find the full project report, which includes more details on the data collection, model training, and results.
+                    </p>
+                    <a class="btn btn-secondary btn-xl" href="assets/files/Deep_Learning_CV_Challenge_Group_1.pdf" target="_blank" download>Report</a>
+
                 </div>
             </div>
        

@@ -35,20 +35,47 @@
             <div class="container px-4 px-lg-5">
                 <div class="content-section-heading text-center">
                     <h2>Cloud AI</h2>
-                    <h2 class="text-primary mb-5">Employing AI models to analyze datasets</h2>
+                    <h2 class="text-primary mb-5">Employing AI Models to Analyze Datasets</h2>
                     <h3 class="text-secondary mb-0">Project Goal</h3>
                     <p class="lead mb-5 text-start">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas ab sed, magni quam culpa doloremque corporis voluptatum exercitationem! Corrupti quam expedita necessitatibus unde soluta vel numquam ducimus impedit temporibus! Assumenda!
+                        In this project, we set out to develop a deep learning pipeline to identify diseases in crop images. 
+                        The overarching goal was to create a robust classification model capable of distinguishing between healthy and diseased plant leaves based on visual features. 
+                        The workflow included exploratory data analysis, data preprocessing and augmentation, model selection, training, and performance evaluation. 
+                        The project culminated in comparing several CNN architectures to determine which performed best under our constraints and dataset.
                     </p>
                     <h3 class="text-secondary mb-0">Project Realisation</h3>
                     <p class="lead mb-5 text-start">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas ab sed, magni quam culpa doloremque corporis voluptatum exercitationem! Corrupti quam expedita necessitatibus unde soluta vel numquam ducimus impedit temporibus! Assumenda!
+                        Our work began with a detailed exploratory data analysis to understand the dataset’s structure and identify any potential quality issues. 
+                        We observed noticeable class imbalance, which risked skewing model performance. To address this, we implemented targeted data augmentation techniques to enrich underrepresented classes and improve generalization. 
+                        We experimented with several machine learning architectures, including MobileNet, EfficientNet, and ResNe, evaluating each on accuracy, training time, and inference efficiency. 
+                        Hyperparameter tuning and fine-tuning of pre-trained networks were done to boost performance without overfitting. 
+                        The final comparison showed that EfficientNetB0 provided the best trade-off between accuracy and speed, especially on low-resource systems.
                     </p>
                     <h3 class="text-secondary mb-0">My Contribution</h3>
                     <p class="lead mb-5 text-start">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas ab sed, magni quam culpa doloremque corporis voluptatum exercitationem! Corrupti quam expedita necessitatibus unde soluta vel numquam ducimus impedit temporibus! Assumenda!
+                        This project was a collaboration with three other students (Jeffrey Stynen, Hannah Cimene, and Liesa Moors), but we each developed our own model, which we then compared at the end. 
+                        In this part of the work, I focused on building an end-to-end model development pipeline using PyCaret. 
+                        This allowed for rapid prototyping and benchmarking of multiple classification algorithms on the preprocessed crop disease dataset. 
+                        I experimented with various models, including decision trees, random forests, and gradient boosting, leveraging PyCaret’s built-in tools for model comparison, cross-validation, and performance visualization. 
+                        After narrowing down the top-performing models, I refined the training pipeline with feature normalization, data balancing techniques, and interpretability tools like confusion matrices and feature importance charts. 
+                        This process gave me hands-on experience with model selection, tuning, and evaluation in a low-code environment, and helped me understand how to balance automation with manual control in a data science workflow. 
+                        Ultimately, it deepened my appreciation for tools that accelerate experimentation while still allowing meaningful insight into model behavior.
                     </p>
-                    <a class="btn btn-secondary btn-xl mb-5" href="internship.html">See More</a>
+                    <p class="lead mb-5 text-start">
+                        Below you can find our final exploratory data analysis (EDA), a notebook in which I explored my own model, and a notebook in which all models are compared.
+                    </p>
+                    <div class="row justify-content-center mb-5">
+                        <div class="col-12 col-md-auto mb-3 mb-md-0">
+                            <a class="btn btn-secondary btn-xl w-100" href="assets/files/crops_eda.ipynb" target="_blank" download>EDA</a>
+                        </div>
+                        <div class="col-12 col-md-auto mb-3 mb-md-0">
+                            <a class="btn btn-secondary btn-xl w-100" href="assets/files/crops_emalisa_model.ipynb" target="_blank" download>Personal Model</a>
+
+                        </div>
+                        <div class="col-12 col-md-auto">
+                            <a class="btn btn-secondary btn-xl w-100" href="assets/files/mode" target="_blank" download>Model Comparison</a>
+                        </div>
+                    </div>
                 </div>
             </div>
        
