@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Emalisa Antonioli - Portfolio</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.png" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Simple line icons-->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.min.css" rel="stylesheet" />
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <a class="menu-toggle rounded" href="#"><i class="fas fa-bars"></i></a>
+        <nav id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand"><a href="index.html">Emalisa Antonioli</a></li>
+                <li class="sidebar-nav-item"><a href="index.html#page-top">Home</a></li>
+                <li class="sidebar-nav-item"><a href="index.html#about">About</a></li>
+                <li class="sidebar-nav-item"><a href="index.html#internship">Internship</a></li>
+                <li class="sidebar-nav-item"><a href="index.html#portfolio">Project Highlights</a></li>
+            </ul>
+        </nav>
+      
+         <!-- Internship-->
+        <section class="content-section" id="internship">
+            <div class="container px-4 px-lg-5">
+                <div class="content-section-heading text-center">
+                    <h2>Project 4.0</h2>
+                    <h2 class="text-primary mb-5">Energy Monitoring Dashboard</h2>
+                    <h3 class="text-secondary mb-0">Project Goal</h3>
+                    <p class="lead mb-5 text-start">
+                        During this project we got the assignment to create an improved energy monitoring dashboard for <a href="www.kenter.nu">Kenter</a>, a company that provides energy solutions to businesses. On the one hand the dashboard should be an intuitive way for the employees to analyze historical data to be able to give better advice to their customers. On the other hand, there should also be a data reconstruction solution. Sometimes energy datapoints are missing from the incoming data, these need to be reconstructed to ensure accurate bolling. This was, for a large part, being done by hand, so we were asked to make a more efficient solution.
+                    </p>
+                    <h3 class="text-secondary mb-0">Project Realisation</h3>
+                    <p class="lead mb-5 text-start">
+                        The project started with analyzing the current situation. This involved interviewing the customer (Kenter), analyzing their current dashboard and data reconstruction process and its shortcomings, and researching what other solutions are being used in the industry. After this we started brainstorming about how we could improve the current situation, and came up with a plan to create a new dashboard that would be more intuitive and user-friendly, as well as a data reconstruction solution that would be more efficient and accurate. We then started implementing our plan, making sure to keep the customer updated and involved in the process. We ended up writing a dashboard with a .NET backend and an Angular frontend. For the data reconstruction we ended up going with a solution primarily based on interpolation, but more about that in the next paragraph, as this was my responsibility. In the following video our solution is introduced: <a href="https://www.youtube.com/watch?v=nV4SZDc6k-E">https://www.youtube.com/watch?v=nV4SZDc6k-E</a>.
+                    </p>
+                    <h3 class="text-secondary mb-0">My Contribution</h3>
+                    <p class="lead text-start">
+                        This project was performed as a group of five students, three of whom where specialized in application development (Wesley van Laer, Nathan Ramaker, and Lucas Vanden Heede), one in cybersecurity (Jarne Willems), and one (me) in data science and AI. Therefore, I was given the responsibility of the data reconstruction solution. The customer initially suggested we went with an AI solution, so that is the direction in which I started thinking first, also because this could possibly allow for predictions of future energy consumption and generation. However, after analyzing the data I realized that predictions were out of the questions due to the lack of data and, more importantly, the lack of available variables. I also realized that the data was much to simplistic to justify the resource intensity of AI, which is why I ended up going with an interpolation model. As the data followed clear seasonal trend, throughout both the day, the week, and the year interpolation was able to give decent reconstruction. An example of this can be seen in the figure below, where the dotted orange line is the original data. The solid blue line is this same data, but with half of it removed and then reconstructed via the dashboard. 
+                    </p>
+                    <img class="mb-5 img-fluid" src="assets/img/kenter2.png" alt="..." />
+                    <p class="lead mb-3 text-start">
+                        I did also look into an AI model. This because interpolation would not be able to reconstruct large data gaps. I used Facebook's Prophet, because it works well with seasonal data and should not require much customization from customer to customer, which is ideal as freeing up manpower was the main goal. I however early on realized that the AI route would not lead to a useable solution in the scope of this project, due to the lack of variety in the data, so I decided to not spend a lot of time on it.
+                        </p>
+                        <p class="lead mb-5 text-start">
+                            From this project I learned a lot about the importance of understanding the data and the problem at hand before jumping into a solution. I also learned a lot about the importance of communication with the customer and how to keep them involved in the process. Finally, I learned a lot about the importance of being flexible and open to change, as sometimes the initial plan does not work out and you need to adapt.
+                            </p>
+                </div>
+            </div>
+       
+        </section>
+        <!-- Scroll to Top Button-->
+        <a class="scroll-to-top rounded" href="#page-top"><i class="fas fa-angle-up"></i></a>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>

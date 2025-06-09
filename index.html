@@ -5,9 +5,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>Stylish Portfolio - Start Bootstrap Template</title>
+        <title>Emalisa Antonioli - Portfolio</title>
         <!-- Favicon-->
-        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <link rel="icon" type="image/x-icon" href="assets/favicon.png" />
         <!-- Font Awesome icons (free version)-->
         <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
         <!-- Simple line icons-->
@@ -25,16 +25,15 @@
                 <li class="sidebar-brand"><a href="#page-top">Emalisa Antonioli</a></li>
                 <li class="sidebar-nav-item"><a href="#page-top">Home</a></li>
                 <li class="sidebar-nav-item"><a href="#about">About</a></li>
-                <li class="sidebar-nav-item"><a href="#services">Services</a></li>
-                <li class="sidebar-nav-item"><a href="#portfolio">Portfolio</a></li>
-                <li class="sidebar-nav-item"><a href="#contact">Contact</a></li>
+                <li class="sidebar-nav-item"><a href="#internship">Internship</a></li>
+                <li class="sidebar-nav-item"><a href="#portfolio">Project Highlights</a></li>
             </ul>
         </nav>
         <!-- Header-->
         <header class="masthead d-flex align-items-center">
             <div class="container px-4 px-lg-5 text-center">
                 <h1 class="mb-1">Emalisa Antonioli</h1>
-                <h3 class="mb-5"><em>Data Engineer To Be</em></h3>
+                <h3 class="mb-5"><em>Candidate Bachelor of Applied Computer Science</em></h3>
                 <div class="down-arrow"></div>
             </div>
         </header>
@@ -44,82 +43,91 @@
                 <div class="row gx-4 gx-lg-5 justify-content-center">
                     <div class="col-lg-10">
                         <h2>About Me</h2>
-                        <p class="lead mb-5">
-                            Lorem Ipsum 
+                        <p class="text-secondary">emalisaantonioli@gmail.com</p>
+                        <p class="lead mb-3">
+                            I have a strong analytical mindset and a passion for connecting business processes with digital solutions.<br>
+                            With a background in Computer Science, Artificial Intelligence, and Business Intelligence, combined with experience in the chemical sector, I enjoy translating complex operational challenges into clear, functional IT solutions.<br>
+                            My experience in data analysis, process modeling, and application development enables me to support digital transformation and contribute to industry-specific IT solutions—particularly in environments where technical and operational expertise intersect.
                         </p>
-                        <a class="btn btn-secondary btn-xl" href="#services">Resume</a>
+                        <a class="btn btn-secondary btn-xl" href="assets/files/Resume Emalisa Antonioli.pdf" target="_blank" download>Resume</a>
+
                     </div>
                 </div>
             </div>
         </section>
-        <!-- Portfolio-->
-        <section class="content-section" id="portfolio">
+         <!-- Internship-->
+        <section class="content-section" id="internship">
             <div class="container px-4 px-lg-5">
                 <div class="content-section-heading text-center">
-                    <h3 class="text-secondary mb-0">Portfolio</h3>
-                    <h2 class="mb-5">Project Highlight</h2>
+                    <h2>Internship</h2>
+                    <p class="lead mb-2 text-center">
+                        For my bachelor thesis internship at Cercuits, I developed a modular, user-friendly desktop application to control and monitor Reverse Pulse Plating (RPP) devices used in PCB manufacturing. The project involved integrating Modbus communication over RS485 with a Python-based PySide6 GUI, designed for easy operation by diverse user profiles within a production environment.
+                    </p>
+                    <p class="lead mb-2 text-center">
+                        Key features include centralized device management, dynamic program profiles, real-time monitoring with automated error detection, and role-based access control. The backend architecture follows a clean MVC pattern with event-based signaling and modular services, ensuring future scalability and maintainability.
+                    </p>
+
+                    <p class="lead mb-3 text-center">
+                        This project deepened my experience in industrial automation, serial communication, and software architecture, while emphasizing the value of detailed functional analysis and modular design in developing robust, production-ready applications.
+                    </p>
+                    <a class="btn btn-secondary btn-xl mb-5" href="internship.html">See More</a>
+
+                </div>
+            </div>
+        <!-- Portfolio-->
+        <section class="content-section bg-light" id="portfolio">
+            <div class="container px-4 px-lg-5">
+                <div class="content-section-heading text-center">
+                    <h2 class="mb-5">Project Highlights</h2>
                 </div>
                 <div class="row gx-0">
                     <div class="col-lg-6">
-                        <a class="portfolio-item" href="#!">
-                            <div class="caption">
-                                <div class="caption-content">
-                                    <div class="h2">Internship</div>
-                                    <p class="mb-0">Full-stack application development, to aid industrial automation.</p>
-                                </div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/rpp_setup.jpg" alt="..." />
-                        </a>
-                    </div>
-                    <div class="col-lg-6">
-                        <a class="portfolio-item" href="#!">
+                        <a class="m-1 portfolio-item" href="project4.html">
                             <div class="caption">
                                 <div class="caption-content">
                                     <div class="h2">Energy Monitoring Dashboard - Data Reconstruction</div>
-                                    <p class="mb-0">A dark blue background with a colored pencil, a clip, and a tiny ice cream cone!</p>
+                                    <p class="mb-0">Developed a data reconstruction system to correct gaps in time-series energy usage data.</p>
                                 </div>
                             </div>
-                            <img class="img-fluid" src="assets/img/kenter1.png" alt="..." />
+                            <img class="img-square" src="assets/img/kenter1.png" alt="..." />
                         </a>
                     </div>
                     <div class="col-lg-6">
-                        <a class="portfolio-item" href="#!">
+                        <a class="m-1 portfolio-item" href="deep_learning.html">
                             <div class="caption">
                                 <div class="caption-content">
-                                    <div class="h2">Strawberries</div>
-                                    <p class="mb-0">Strawberries are such a tasty snack, especially with a little sugar on top!</p>
+                                    <div class="h2">Self-Driving Car</div>
+                                    <p class="mb-0">Created an AI that autonomously learned to play Forza Horizon 4.</p>
                                 </div>
                             </div>
-                            <img class="img-fluid" src="assets/img/portfolio-3.jpg" alt="..." />
+                            <img class="img-square" src="assets/img/cvc1.png" alt="..." />
                         </a>
                     </div>
                     <div class="col-lg-6">
-                        <a class="portfolio-item" href="#!">
+                        <a class="m-1 portfolio-item" href="cloud_ai.html">
                             <div class="caption">
                                 <div class="caption-content">
-                                    <div class="h2">Workspace</div>
-                                    <p class="mb-0">A yellow workspace with some scissors, pencils, and other objects.</p>
+                                    <div class="h2">Deep Dive Into Data Analysis</div>
+                                    <p class="mb-0">Dived into statistics to be able to gain deeper insights from data. Also learned how to use and compare different AI models for data analysis.</p>
                                 </div>
                             </div>
-                            <img class="img-fluid" src="assets/img/portfolio-4.jpg" alt="..." />
+                            <img class="img-square" src="assets/img/dl1.png" alt="..." />
+                        </a>
+                    </div>
+                    <div class="col-lg-6">
+                        <a class="m-1 portfolio-item" href="ta.html">
+                            <div class="caption">
+                                <div class="caption-content">
+                                    <div class="h2">Teaching Assistant Programming</div>
+                                    <p class="mb-0">Broadened both technical and soft skills, having a supporting teaching role in programming courses at the University of Amsterdam.</p>
+                                </div>
+                            </div>
+                            <img class="img-square" src="assets/img/UvA-SciencePark.jpg" alt="..." />
                         </a>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- Footer-->
-        <footer class="footer text-center">
-            <div class="container px-4 px-lg-5">
-                <ul class="list-inline mb-5">
-                    <li class="list-inline-item">
-                        <a class="social-link rounded-circle text-white mr-3" href="#!"><i class="icon-social-linkedin"></i></a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a class="social-link rounded-circle text-white" href="#!"><i class="icon-social-github"></i></a>
-                    </li>
-                </ul>
-            </div>
-        </footer>
         <!-- Scroll to Top Button-->
         <a class="scroll-to-top rounded" href="#page-top"><i class="fas fa-angle-up"></i></a>
         <!-- Bootstrap core JS-->

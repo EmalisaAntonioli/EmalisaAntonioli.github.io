@@ -632,6 +632,16 @@ progress {
   height: auto;
 }
 
+.img-square {
+  aspect-ratio: 1 / 1; 
+  object-fit: cover; 
+  width: 100%; 
+  height: auto; 
+  max-height: 400px;
+  position: relative;
+}
+
+
 .img-thumbnail {
   padding: 0.25rem;
   background-color: #fff;
@@ -8065,7 +8075,8 @@ textarea.form-control-lg {
 /* rtl:end:remove */
 .text-primary {
   --bs-text-opacity: 1;
-  color: rgba(var(--bs-primary-rgb), var(--bs-text-opacity)) !important;
+  color: #000 !important;
+  font-style: italic !important;
 }
 
 .text-secondary {
@@ -10907,7 +10918,7 @@ html {
   height: 100%;
   transition: all 0.4s ease 0s;
   transform: translateX(250px);
-  background: #1D809F;
+  background: #B27D49;
   border-left: 1px solid rgba(255, 255, 255, 0.1);
 }
 
@@ -11035,6 +11046,9 @@ footer.footer .social-link:hover {
   .map {
     height: 75%;
   }
+  .masthead {
+    background-position: left center;
+  }
 }
 .masthead {
   min-height: 30rem;
@@ -11044,7 +11058,7 @@ footer.footer .social-link:hover {
   height: auto;
   padding-top: 8rem;
   padding-bottom: 8rem;
-  background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("../assets/img/bg-masthead.jpg");
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0.1) 100%), url("../assets/img/bg-masthead.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -11057,6 +11071,7 @@ footer.footer .social-link:hover {
 @media (min-width: 992px) {
   .masthead {
     height: 100vh;
+    background-position: center center;
   }
   .masthead h1, .masthead .h1 {
     font-size: 5.5rem;
@@ -11074,7 +11089,7 @@ footer.footer .social-link:hover {
   display: flex;
   height: 100%;
   width: 100%;
-  background-color: rgba(33, 37, 41, 0.2);
+  background-color: rgba(33, 37, 41, 0.5);
   position: absolute;
   top: 0;
   bottom: 0;
@@ -11085,7 +11100,7 @@ footer.footer .social-link:hover {
   margin: auto 2rem 2rem;
 }
 .portfolio-item .caption .caption-content h2, .portfolio-item .caption .caption-content .h2 {
-  font-size: 0.8rem;
+  font-size: 1rem;
   text-transform: uppercase;
 }
 .portfolio-item .caption .caption-content p {
